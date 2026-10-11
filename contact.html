@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Pre-orders | North Star Bakery</title>
+</head>
+<body>
+    <header>
+        <img src="media/bakery-logo.png"
+             alt="North Star Bakery logo">
+        <h1>Contact North Star Bakery</h1>
+        <p>We would love to hear from you.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" aria-current="page">
+                Contact and Pre-orders
+            </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Place a Pre-order</h2>
+            <p>Use this form to order bakery products in advance.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+
+                    <p>
+                        <label for="preorder-name">Full name:</label>
+                        <input type="text" id="preorder-name"
+                            name="preorder_name" required>
+                    </p>
+
+                    <p>
+                        <label for="preorder-email">Email address:</label>
+                        <input type="email" id="preorder-email"
+                            name="preorder_email" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Details</legend>
+
+                    <p>
+                        <label for="pickup-date">Preferred pickup date:</label>
+                        <input type="date" id="pickup-date"
+                            name="pickup_date" required>
+                    </p>
+
+                    <p>
+                        <label for="order-items">Products and quantities:</label>
+                        <textarea id="order-items" name="order_items"
+                                rows="4" required
+                                placeholder="Example: 2 loaves of bread and 4 croissants"></textarea>
+                    </p>
+
+                    <p>
+                        <label for="order-notes">Allergies or special requests:</label>
+                        <textarea id="order-notes" name="order_notes"
+                                rows="3"
+                                placeholder="Enter any allergies or special requests."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Pre-order</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>General Inquiry</h2>
+            <p>Have a question? Send us a message using this form.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+
+                    <p>
+                        <label for="inquiry-name">Full name:</label>
+                        <input type="text" id="inquiry-name"
+                            name="inquiry_name" required>
+                    </p>
+
+                    <p>
+                        <label for="inquiry-email">Email address:</label>
+                        <input type="email" id="inquiry-email"
+                            name="inquiry_email" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Question</legend>
+
+                    <p>
+                        <label for="inquiry-subject">Subject:</label>
+                        <input type="text" id="inquiry-subject"
+                            name="inquiry_subject" required>
+                    </p>
+
+                    <p>
+                        <label for="inquiry-message">Message:</label>
+                        <textarea id="inquiry-message" name="inquiry_message"
+                                rows="5" required
+                                placeholder="Enter your question or message."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Inquiry</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Location and Hours</h2>
+            <p>Location: Your Neighborhood, Main Street</p>
+            <p>Monday–Saturday: 7:00 AM–6:00 PM</p>
+            <p>Sunday: 8:00 AM–2:00 PM</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery</p>
+        <p><a href="index.html">Return to Home</a></p>
+    </footer>
+</body>
+</html>
