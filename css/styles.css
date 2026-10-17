@@ -334,3 +334,10 @@ footer a:focus-visible {
         font-size: 28px;
     }
 }
+
+.error-message {
+    display: block;
+    color: #b00020;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}

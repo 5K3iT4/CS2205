@@ -81,8 +81,7 @@
         <section>
             <h2>General Inquiry</h2>
             <p>Have a question? Send us a message using this form.</p>
-
-            <form action="#" method="post">
+            <form id="inquiry-form" action="#" method="post" novalidate>
                 <fieldset>
                     <legend>Your Contact Information</legend>
 
@@ -90,12 +89,14 @@
                         <label for="inquiry-name">Full name:</label>
                         <input type="text" id="inquiry-name"
                             name="inquiry_name" required>
+                        <span class="error-message" id="inquiry-name-error"></span>
                     </p>
 
                     <p>
                         <label for="inquiry-email">Email address:</label>
                         <input type="email" id="inquiry-email"
                             name="inquiry_email" required>
+                        <span class="error-message" id="inquiry-email-error"></span>
                     </p>
                 </fieldset>
 
@@ -106,13 +107,17 @@
                         <label for="inquiry-subject">Subject:</label>
                         <input type="text" id="inquiry-subject"
                             name="inquiry_subject" required>
+                        <span class="error-message" id="inquiry-subject-error"></span>
                     </p>
 
                     <p>
                         <label for="inquiry-message">Message:</label>
-                        <textarea id="inquiry-message" name="inquiry_message"
-                                rows="5" required
-                                placeholder="Enter your question or message."></textarea>
+                        <textarea id="inquiry-message"
+                            name="inquiry_message"
+                            rows="5"
+                            required
+                            placeholder="Enter your question or message."></textarea>
+                        <span class="error-message" id="inquiry-message-error"></span>
                     </p>
                 </fieldset>
 
@@ -120,6 +125,7 @@
                     <button type="submit">Submit Inquiry</button>
                 </p>
             </form>
+
         </section>
 
         <section>
@@ -134,5 +140,7 @@
         <p>&copy; 2026 North Star Bakery</p>
         <p><a href="index.html">Return to Home</a></p>
     </footer>
+    
+    <script src="js/contact.js"></script>
 </body>
 </html>
